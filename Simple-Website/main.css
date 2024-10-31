@@ -1,0 +1,92 @@
+/*represents <html> element in the HTML page*/
+:root {
+    /*Create var with constant value of color*/
+    --green: #569617;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: monospace;
+    margin: 20%;
+}
+
+h1 {
+    font-size: 5vh;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+/*This is Class*/
+.list {
+    list-style: square;
+}
+
+/*This is Id */
+#msg {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3vh;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.input-section {
+    justify-content: end;
+    max-width: 40%;
+}
+
+  
+.taskList {
+    justify-content: start;
+    border-style: dashed;
+    max-width: 50%;
+    margin-left: 20px;
+}
+  
+.task-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+  
+.task-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+  
+.btn{
+
+    top: 20px;
+    left: 250px;
+    height: 45px;
+    width: 60px;
+    border-radius: 20%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+
+.light-theme {
+    /*Defined two new variables bg and fontColor*/
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
